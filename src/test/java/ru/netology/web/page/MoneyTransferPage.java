@@ -37,14 +37,14 @@ public class MoneyTransferPage {
     public DashboardPage cancelToFirstCard(Integer transfer) {
         amount.setValue(transfer.toString());
         fromCard.setValue(DataHelper.getNumberCard2());
-        buttonAdd.click();
+        buttonCancel.click();
         return new DashboardPage();
     }
 
     public DashboardPage cancelToSecondCard(Integer transfer) {
         amount.setValue(transfer.toString());
         fromCard.setValue(DataHelper.getNumberCard1());
-        buttonAdd.click();
+        buttonCancel.click();
         return new DashboardPage();
     }
 
